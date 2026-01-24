@@ -1,0 +1,337 @@
+.back-button {
+  display: inline-block;
+  margin: 20px 40px;
+  padding: 8px 16px;
+  background-color: #d04243;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #a03030;
+  box-shadow: 0 3px 0 #802020;
+  font-family: 'Minecrafter', sans-serif !important;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background-color: #ff4c4c;
+  border-color: #c03030;
+}
+
+.back-button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.njut-header {
+  background: #0a0a0a;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+.header-image {
+  flex: 0 0 200px;
+  border: 2px solid #ff4c4c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.header-image img {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  flex: 1;
+  color: white;
+  font-family: 'Minecrafter', sans-serif !important;
+}
+
+.header-title {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  letter-spacing: 1px;
+}
+
+.gallery-section {
+  padding: 20px 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Minecrafter', sans-serif !important;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.gallery-item {
+  background: #0a0a0a;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  border-color: #ff4c4c;
+  box-shadow: 0 12px 30px rgba(255, 76, 76, 0.25);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-info {
+  padding: 15px;
+}
+
+.gallery-info h3 {
+  font-family: 'Minecrafter', sans-serif !important;
+  font-size: 20px;
+  color: white;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-info p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background-color: #d04243;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: 'Minecrafter', sans-serif !important;
+  border: 1px solid #a03030;
+  box-shadow: 0 2px 0 #802020;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.view-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #0a0a0a;
+  border: 2px solid #ff4c4c;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 900px;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 10px 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Minecrafter', sans-serif !important;
+}
+
+.close-btn:hover {
+  color: #ff4c4c;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-main-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.modal-image img {
+  width: 350px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.3s ease;
+}
+
+.modal-text-and-detail {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.modal-text-and-detail h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  font-family: 'Minecrafter', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.modal-text-and-detail h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4c4c;
+  box-shadow: 0 0 8px #ff4c4c, 0 0 16px #ff4c4c;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 8px #ff4c4c, 0 0 16px #ff4c4c;
+  }
+  to {
+    box-shadow: 0 0 12px #ff4c4c, 0 0 24px #ff4c4c;
+  }
+}
+
+.modal-text-and-detail p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.modal-detail-inline {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2px;
+}
+
+.modal-detail-inline img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  max-height: 3000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .modal-main-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-image img {
+    width: 150px;
+  }
+
+  .modal-text-and-detail {
+    text-align: center;
+  }
+}

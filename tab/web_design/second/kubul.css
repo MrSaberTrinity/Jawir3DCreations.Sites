@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+body{
+    background-color: #333;
+}
+
+ .kartu-kanjut {
+display: grid;
+grid-template-columns: repeat(1, 1fr); /* Default: 1 kolom */
+gap: 20px;
+margin-top: 100px;
+  }
+
+ @media (min-width: 768px) {
+.kartu-kanjut {
+grid-template-columns: repeat(4, 1fr); /* 4 kolom di desktop */
+}
+  }
+
+  .fa-brands{
+    font-size: 10px;
+  }
+
+.kartu {
+width: 100%; /* Sesuaikan lebar kartu agar responsif */
+max-width: 325px; /* Batas maksimum lebar kartu */
+background-color: #f0f0f0;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: auto; /* Pusatkan kartu */
+  }
+
+.kartu img{
+    width: 100%;
+    height: auto;
+}
+
+.konten-kartu{
+    padding: 20px;
+}
+
+.konten-kartu h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.konten-kartu p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.konten-kartu button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+.card {
+width: 190px;
+background: white;
+padding: .4em;
+border-radius: 6px;
+}
+
+.card-image {
+background-image: url("download.jpeg");
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 180px;
+border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+transform: scale(0.98);
+}
+
+.category {
+text-transform: uppercase;
+font-size: 0.7em;
+font-weight: 600;
+color: rgb(63, 121, 230);
+padding: 10px 7px 0;
+}
+
+.category:hover {
+cursor: pointer;
+}
+
+.heading {
+font-weight: 600;
+color: rgb(88, 87, 87);
+padding: 7px;
+}
+
+.heading:hover {
+cursor: pointer;
+}
+
+.author {
+color: gray;
+font-weight: 400;
+font-size: 11px;
+padding-top: 20px;
+}
+
+.name {
+font-weight: 600;
+}
+
+.name:hover {
+cursor: pointer;
+}
+
+.container {
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+img{
+    width: 100%;
+}
+
+
+

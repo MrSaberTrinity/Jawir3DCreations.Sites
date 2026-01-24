@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+body {
+    margin: 0;
+    gap: 50em;
+    font-family: 'Minecraft', sans-serif;
+    background-color : #1C1D22;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B72B63;
+    padding: 10px 20px;
+}
+
+.web {
+    color: white;
+    font-size: 24px;
+}
+
+.buton{
+  display: inline-block;
+  color: white;
+  font-size: 22.5px;
+  text-decoration: none;
+  padding: 5px 12.5px;
+  border: 3px solid #B72B63;
+  border-radius: 10px;
+}
+
+.buton:hover{
+  animation: pulsate 1s ease-in-out;;
+  
+}
+
+@keyframes pulsate{
+  0%{
+    box-shadow: 0 0 25px white, 0 0 #961649;
+  }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    border: 1px solid white;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+ul{
+  margin-top: 100px;
+  text-align: center;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.fa-brands{
+  font-size: 1.5rem;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.fa-youtube{
+  color: white;
+}
+
+.fa-tiktok{
+  color: white;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-discord{
+  color: white;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #DE3478;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.priscilla{
+    border-radius: 50%;
+    max-width: 256px;
+    float : left;
+}
+
+.rawr{
+  margin: 150px auto;
+  width: 64%;
+}
+
+.teks{
+  color: white;
+}
+
+.teks h1{
+  font-size: 42px;
+}
+
+.teks p{
+  font-size: 6px;
+}
+
+.sukma{
+  color: black;
+  font-size: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #B72B63;
+  padding: 10px 20px;
+  justify-content: center;
+}

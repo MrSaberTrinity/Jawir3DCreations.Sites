@@ -1,0 +1,111 @@
+.back-button {
+    display: inline-block;
+    margin: 20px 40px;
+    padding: 8px 16px;
+    background-color: #d04243;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #a03030;
+    box-shadow: 0 3px 0 #802020;
+    font-family: 'Minecrafter', sans-serif !important;
+    transition: all 0.2s;
+}
+
+.back-button:hover {
+    background-color: #ff4c4c;
+    border-color: #c03030;
+}
+
+.back-button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.addon-section {
+    padding-top: 20px;
+}
+
+.section-title {
+    font-family: 'Minecrafter', sans-serif !important;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title strong {
+    color: #ff4c4c;
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 20px 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.addon-card {
+    background: #0a0a0a;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, border-color 0.3s;
+    min-width: 260px;
+}
+
+.addon-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff4c4c;
+}
+
+.addon-card img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.addon-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.addon-info h3 {
+    font-family: 'Minecrafter', sans-serif !important;
+    font-size: 20px;
+    color: white;
+    margin: 0 0 8px;
+}
+
+.addon-info p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background-color: #d04243;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Minecrafter', sans-serif !important;
+    border: 1px solid #a03030;
+    box-shadow: 0 2px 0 #802020;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #ff4c4c;
+}
+
+.download-btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kubul.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <i class="fa-brands fa-youtube"></i>
+
+    <div class="kartu-kanjut">
+        <div class="kartu">
+            <img src="download.jpeg" alt="">
+            <div class="konten-kartu">
+                <h3>My Kisah</h3>
+                <p>gw mas jawir menyatakan bahwa gw cinta sama bini gw yaitu.</p>
+                <p>saya chan, dohwa, priscilla, andras, mommy croscelle, pansy chan, kanao, oko chan, nonomi, chiaki, yuuka</p>
+                <button>more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image"></div>
+        <div class="category"> Illustration </div>
+        <div class="heading"> A heading that must span over two lines
+            <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+        </div>
+    </div>
+
+    <section class="container">
+      <div class="wrapper">
+          <img src="C&C Team.jpeg">
+          <img src="C&C Team.jpeg">
+          <img src="C&C Team.jpeg">
+          <img src="C&C Team.jpeg">
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="slider">
+            <div class="slides">
+                <img src="C&C Team.jpeg" alt="Slide 1">
+                <img src="C&C Team.jpeg" alt="Slide 2">
+                <img src="C&C Team.jpeg" alt="Slide 3">
+                <img src="C&C Team.jpeg" alt="Slide 4">
+            </div>
+        </div>
+
+        <div class="nav">
+            <div class="dot" onclick="manualSlide(0)"></div>
+            <div class="dot" onclick="manualSlide(1)"></div>
+            <div class="dot" onclick="manualSlide(2)"></div>
+            <div class="dot" onclick="manualSlide(3)"></div>
+        </div>
+    </section>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.nav .dot');
+        let currentIndex = 0;
+
+        function updateActiveNav() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function autoSlide() {
+            currentIndex = (currentIndex + 1) % 4;
+            slides.style.marginLeft = `-${currentIndex * 100}%`;
+            updateActiveNav();
+        }
+
+        function manualSlide(index) {
+            currentIndex = index;
+            slides.style.marginLeft = `-${currentIndex * 100}%`;
+            updateActiveNav();
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => manualSlide(index));
+        });
+
+        setInterval(autoSlide, 5000);
+    </script>
+</body>
+</html>
+
+    
+
+
+

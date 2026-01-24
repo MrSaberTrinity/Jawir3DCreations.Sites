@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f5f5f5;
+    font-family: 'ThaleahFat', sans-serif;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 8px 16px;
+    background-color: #d04243;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #a03030;
+    box-shadow: 0 3px 0 #802020;
+    font-family: 'Minecrafter', sans-serif !important;
+    transition: all 0.2s;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #ff4c4c;
+    border-color: #c03030;
+}
+
+.back-button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.addon-detail {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    color: #f5f5f5;
+}
+
+.addon-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.header-image {
+    flex: 0 0 300px;
+    position: relative;
+}
+
+.header-image .preview-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.header-text {
+    flex: 1;
+    min-width: 280px;
+    color: #f5f5f5;
+}
+
+.header-text h1 {
+    font-family: 'Minecrafter', sans-serif !important;
+    font-size: 28px;
+    color: white;
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+}
+
+.header-text .subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.features h3 {
+    font-family: 'Minecrafter', sans-serif !important;
+    color: #ff4c4c;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.features ul {
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.gallery-container,
+.video-container {
+    background-color: #1a1a1a;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 25px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.gallery-header,
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-title,
+.video-title {
+    font-family: 'Minecrafter', sans-serif !important;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.gallery-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+.gallery-message {
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 12px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 8px 4px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.gallery-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    flex: 0 0 220px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4px;
+    border-radius: 3px;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gallery-caption .tag {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 1px 3px;
+    border-radius: 2px;
+    font-size: 9px;
+    margin-right: 2px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.download-section {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #d04243;
+    color: white;
+    text-decoration: none;
+    font-family: 'Minecrafter', sans-serif !important;
+    font-size: 16px;
+    border: 2px solid #a03030;
+    box-shadow: 0 3px 0 #802020;
+    transition: all 0.2s;
+    margin: 8px 0;
+    min-width: 200px;
+}
+
+.download-btn:hover {
+    background-color: #ff4c4c;
+    border-color: #c03030;
+}
+
+.download-btn:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .addon-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .header-image {
+        flex: none;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .gallery-item {
+        flex: 0 0 calc(100% - 16px);
+    }
+
+    .download-btn {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    .gallery-nav {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .back-button {
+        margin: 16px;
+    }
+}

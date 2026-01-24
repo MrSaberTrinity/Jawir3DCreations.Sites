@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weapons Models - Jawir3DCreations</title>
+  <link rel="shortcut icon" href="../../Assets/Media/icon-web.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../Css/Style.css" />
+  <link rel="stylesheet" href="../../Css/other/model.css" />
+  <link rel="stylesheet" href="../../Css/cursor/cursor.css">
+</head>
+
+<body>
+  <a href="../index-model.html" class="back-button">← Back to Model</a>
+
+  <div class="njut-header">
+    <div class="header-image">
+      <img src="../../Assets/Media/icon/weapon.png" alt="Weapon Icon" />
+    </div>
+    <div class="header-content">
+      <h1 class="header-title">WEAPON MODELS</h1>
+      <p class="header-subtitle">
+        I design custom weapon models for Minecraft Bedrock Edition.
+      </p>
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <h2 class="section-title">My Weapons Collection</h2>
+    <p class="section-subtitle">Each weapon is optimized for performance, rigged for animation, and styled to match its anime or game origin.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/venuzdonoa.png" alt="Venuzdonoa" />
+        <div class="gallery-info">
+          <h3>Venuzdonoa</h3>
+          <p>Maou Gakuin</p>
+          <a href="#" class="view-btn" data-title="Venuzdonoa"
+            data-desc="The greatsword wielded by Anos Voldigoad—massive black blade with crimson energy veins and demonic aura. Faithfully adapted for Bedrock."
+            data-model-img="../../Assets/Media/Model/venuzdonoa.png"
+            data-detail-img="../../Assets/Media/Model/detail/venuzdonoa_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/mistsplitter reforged.png" alt="Mistsplitter Reforged" />
+        <div class="gallery-info">
+          <h3>Mistsplitter Reforged</h3>
+          <p>Genshin Impact</p>
+          <a href="#" class="view-btn" data-title="Mistsplitter Reforged"
+            data-desc="Kaedehara Kazuha’s signature sword—elegant purple blade with floating energy particles. Faithfully recreated for Bedrock."
+            data-model-img="../../Assets/Media/Model/mistsplitter reforged.png"
+            data-detail-img="../../Assets/Media/Model/detail/mistplitter_reforge_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/yamato_katana.png" alt="Yamato Katana" />
+        <div class="gallery-info">
+          <h3>Yamato Katana</h3>
+          <p>Devil May Cry</p>
+          <a href="#" class="view-btn" data-title="Yamato"
+            data-desc="Yamato, the legendary katana of Vergil—sleek, dark, and imbued with dimensional power. Perfect for stylish demon hunters in Minecraft."
+            data-model-img="../../Assets/Media/Model/yamato_katana.png"
+            data-detail-img="../../Assets/Media/Model/detail/yamato_katana_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/Rebellion.png" alt="Rebellion Sword" />
+        <div class="gallery-info">
+          <h3>Rebellion Sword</h3>
+          <p>Devil May Cry</p>
+          <a href="#" class="view-btn" data-title="Rebellion"
+            data-desc="Dante’s iconic broadsword—bold red accents, rugged design, and battle-worn look. A symbol of devil hunter legacy."
+            data-model-img="../../Assets/Media/Model/Rebellion.png"
+            data-detail-img="../../Assets/Media/Model/detail/rebellion_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/Key_of_king.png" alt="Key of the King's Law" />
+        <div class="gallery-info">
+          <h3>Key of the King’s Law</h3>
+          <p>Fate/Grand Order</p>
+          <a href="#" class="view-btn" data-title="Key of the King’s Law"
+            data-desc="Artoria’s holy sword Excalibur in its sealed form—simple golden key with royal blue accents. Ideal for lore-based builds."
+            data-model-img="../../Assets/Media/Model/Key_of_king.png"
+            data-detail-img="../../Assets/Media/Model/detail/Key_of_king_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="../../Assets/Media/Model/Tsumukari_murasama.png" alt="Tsumukari Murasama" />
+        <div class="gallery-info">
+          <h3>Tsumukari Murasama</h3>
+          <p>Fate/Grand Order</p>
+          <a href="#" class="view-btn" data-title="Tsumukari Murasama"
+            data-desc="A cursed blade wielded by Senji Murasama in FGO—elegant yet deadly, with a blood-red aura and whispering edge."
+            data-model-img="../../Assets/Media/Model/Tsumukari_murasama.png"
+            data-detail-img="../../Assets/Media/Model/detail/Tsumukari_murasama_detail.png">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modelModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close-btn" id="closeModal">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-main-row">
+          <div class="modal-image">
+            <img id="modalModelImg" src="" alt="Model Preview" />
+          </div>
+
+          <div class="modal-text-and-detail">
+            <h2 class="modal-title" id="modalTitle">Model Title</h2>
+            <p id="modalDesc">Description here.</p>
+
+            <div class="modal-detail-inline">
+              <img id="modalDetailImg" src="" alt="Detail View" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="showcase-footer">
+    <div class="footer-samping">
+      <div class="footer-logo">
+        <h4>Jawir3DCreation</h4>
+        <p class="footer-description">
+          Crafting immersive Minecraft experiences through custom 3D models and web design.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html/#about">About</a></li>
+          <li><a href="../index.html/#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>My Work</h3>
+        <ul>
+          <li><a href="../index-addon.html">Addons</a></li>
+          <li><a href="../index-model.html">Models</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@marchelhugo998">YouTube</a></li>
+          <li><a href="https://x.com/Mrsabertrinity">Twitter X</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="https://sketchfab.com/Mas_jawir123">SketchFab</a></li>
+          <li><a href="https://ko-fi.com/mrsabertrinity">Ko-fi</a></li>
+          <li><a href="https://github.com/MrSaberTrinity">Github</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyright © Jawir3DCreation 2026. All rights reserved.
+    </div>
+  </footer>
+  <div class="custom-cursor"></div>
+
+</body>
+<script src="../../Js/other/model.js"></script>
+<script src="../../Js/cursor/cursor.js"></script>
+
+</html>
