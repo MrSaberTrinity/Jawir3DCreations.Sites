@@ -1,0 +1,25 @@
+.character-list {
+    margin: 8px 0 12px 24px;
+    list-style: none;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.character-list li {
+    margin: 4px 0;
+    padding-left: 10px;
+    border-left: 2px solid #ff4d4d;
+    transition: all 0.3s ease;
+}
+
+.character-list li::before {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.character-list li:hover {
+    color: #fff;
+    border-left: 3px solid #ff4d4d;
+    padding-left: 12px;
+    transform: translateX(5px);
+}
